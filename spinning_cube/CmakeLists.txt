@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.10)
+project(CubeProject C)
+
+set(CMAKE_C_STANDARD 11)
+
+# ---- Ativar warnings (opcional) ----
+if (MSVC)
+    add_compile_options(/W3)
+else()
+    add_compile_options(-Wall -Wextra)
+endif()
+
+# ---- Localizar bibliotecas ----
+find_package(OpenGL REQUIRED)
+
+# Se você instalou GLFW via vcpkg:
+find_package(glfw3 CONFIG REQUIRED)
+
+# Se você instalou GLEW via vcpkg:
+find_package(GLEW CONFIG REQUIRED)
+
+# ---- Criar o executável ----
+add_executable(cube cube.c)
+
+# ---- Linkar bibliotecas ----
+target_link_libraries(cube 
+    OpenGL::GL
+    glfw
+    GLEW::GLEW
+)
+

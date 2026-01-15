@@ -1,0 +1,10 @@
+^C:\USERS\USER\ONEDRIVE\ÁREA DE TRABALHO\NOVA PASTA (3)\SPINNING_CUBE\CMAKELISTS.TXT
+setlocal
+C:\Users\User\Downloads\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe "-SC:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube" "-BC:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube/build" --check-stamp-file "C:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

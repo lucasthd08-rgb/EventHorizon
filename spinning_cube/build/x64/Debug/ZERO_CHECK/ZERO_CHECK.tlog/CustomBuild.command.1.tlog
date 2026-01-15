@@ -1,0 +1,10 @@
+^C:\USERS\USER\ONEDRIVE\ÁREA DE TRABALHO\NOVA PASTA (3)\SPINNING_CUBE\BUILD\CMAKEFILES\D4D96AB196C43A73E2D9DCC270C5B19B\GENERATE.STAMP.RULE
+setlocal
+C:\Users\User\Downloads\cmake-4.2.0-rc1-windows-x86_64\bin\cmake.exe "-SC:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube" "-BC:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/User/OneDrive/Área de Trabalho/Nova pasta (3)/spinning_cube/build/CubeProject.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
