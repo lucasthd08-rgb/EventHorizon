@@ -1,0 +1,13 @@
+[
+    {
+        "id": 2,
+        "pos": [
+            932,
+            370
+        ],
+        "tipo": "Processador",
+        "energia": 0,
+        "tempo_proprio": 525.6365771265826,
+        "fator_tempo": 0.9992751298114811
+    }
+]

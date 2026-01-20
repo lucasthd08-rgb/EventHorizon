@@ -1,0 +1,71 @@
+{
+    "ultimo_id": 7,
+    "dados": [
+        {
+            "id": 1,
+            "pos": [
+                402,
+                414
+            ],
+            "tipo": "Mem\u00f3ria",
+            "energia": 4.008712341221349,
+            "tempo_proprio": 549.1287658778638,
+            "fator_tempo": 0.713478101807536
+        },
+        {
+            "id": 3,
+            "pos": [
+                785,
+                479
+            ],
+            "tipo": "Energia",
+            "energia": 9.44921171114092,
+            "tempo_proprio": 35.07882888590812,
+            "fator_tempo": 0.5140238043457032
+        },
+        {
+            "id": 4,
+            "pos": [
+                723,
+                556
+            ],
+            "tipo": "Energia",
+            "energia": 9.728187149626649,
+            "tempo_proprio": 27.181285037334092,
+            "fator_tempo": 0.5067587751278761
+        },
+        {
+            "id": 5,
+            "pos": [
+                977,
+                408
+            ],
+            "tipo": "Armazenamento",
+            "energia": 9.960962879437684,
+            "tempo_proprio": 19.518560281161506,
+            "fator_tempo": 0.5009526921720374
+        },
+        {
+            "id": 6,
+            "pos": [
+                517,
+                208
+            ],
+            "tipo": "Processador",
+            "energia": 9.72822180845287,
+            "tempo_proprio": 13.588909577356526,
+            "fator_tempo": 0.5066278482425235
+        },
+        {
+            "id": 7,
+            "pos": [
+                911,
+                256
+            ],
+            "tipo": "Rede",
+            "energia": 9.974987487484743,
+            "tempo_proprio": 2.5012512515254817,
+            "fator_tempo": 0.5005006885171684
+        }
+    ]
+}
