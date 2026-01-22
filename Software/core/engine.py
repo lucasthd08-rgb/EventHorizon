@@ -1,5 +1,6 @@
 # engine.py
-import json
+from config import WIDTH, HEIGHT
+import json #persistência
 import os
 import random
 
@@ -18,7 +19,7 @@ class Universo:
         self.ultimo_id += 1
         dado = {
             "id": self.ultimo_id,
-            "pos": [random.randint(400, 1000), random.randint(120, 600)],
+            "pos": [random.randint(10, WIDTH - 10), random.randint(10, HEIGHT - 10)],
             "tipo": random.choice(["Memória", "Processador", "Armazenamento", "Energia", "Rede"]),
             "energia": 10,
             "tempo_proprio": 0,
@@ -57,7 +58,7 @@ class Universo:
             with open(self.caminho_mortos, "r") as f:
                 self.dados_mortos = json.load(f)
 
-    def enviar_pulso(self, id_origem, id_destino, energia=0.5):
+    def enviar_pulso(self, id_origem, id_destino, energia=0.2):
         origem = next((d for d in self.dados if d["id"] == id_origem), None)
         destino = next((d for d in self.dados if d["id"] == id_destino), None)
 
@@ -69,6 +70,8 @@ class Universo:
 
         origem["energia"] -= energia
 
+        
+
         pulso = {
            "origem": id_origem,
            "destino": id_destino,
@@ -76,17 +79,24 @@ class Universo:
            "progresso": 0.0,
            "pos_origem": origem["pos"][:],
            "pos_destino": destino["pos"][:],
-           "pos": origem["pos"][:]
+           "pos": origem["pos"][:],
+           "distancia": 0.0,
+           "velocidade": 10
         }
+
+        pulso["energia"] = origem["energia"] * 0.1
+
 
         self.pulsos.append(pulso)
         return True
 
-    def evoluir_pulsos(self, escala_tempo):
+    def evoluir_pulsos(self, escala):
        for pulso in self.pulsos[:]:
     
            # avança no tempo
-           pulso["progresso"] += 0.01 * escala_tempo
+           if pulso["distancia"] > 0:
+               delta = (pulso["velocidade"] * escala) / pulso["distancia"]
+               pulso["progresso"] += delta
     
            # chegou ao destino
            if pulso["progresso"] >= 1.0:
@@ -102,9 +112,16 @@ class Universo:
                continue  # pula para o próximo pulso
     
            # movimento espacial (só se ainda estiver viajando)
+
+
            ox, oy = pulso["pos_origem"]
            dx, dy = pulso["pos_destino"]
-    
+
+           pulso["distancia"] = ((dx - ox)**2 + (dy - oy)**2)**0.5  
+           pulso["velocidade"] = 1
+           pulso["energia"] *= 0.995
+
+
            t = pulso["progresso"]
            pulso["pos"][0] = ox + (dx - ox) * t
            pulso["pos"][1] = oy + (dy - oy) * t
