@@ -5,17 +5,17 @@ HELP = {
     "listar dados mortos": "listar dados mortos → lista dados sem energia",
     "listar pulsos": "listar pulsos → mostra todos os pulsos existentes",
 
-    "usar dado": "usar dado <id> → consome 1 unidade de energia do dado",
+    "usar dado X": "usar dado <id> → consome 1 unidade de energia do dado",
 
-    "duplicar dado": "duplicar dado <id> → cria uma cópia do dado",
+    "duplicar dado X": "duplicar dado <id> → cria uma cópia do dado",
 
-    "enviar pulso": "enviar pulso <origem> <destino> → envia energia entre dados",
+    "enviar pulso X Y": "enviar pulso <origem> <destino> → envia energia entre dados",
 
     "energia total": "energia total → mostra a energia total do universo",
 
     "status universo": "status universo → mostra o estado geral do universo",
 
-    "tempo": "tempo <valor> → ajusta a escala temporal do universo",
+    "tempo X": "tempo <valor> → ajusta a escala temporal do universo",
 
     "clear": "clear → limpa o terminal",
     "reset universo": "reset universo → apaga todos os dados e pulsos",
@@ -113,7 +113,18 @@ def processar_comando(comando, universo, estado):
         respostas.append(f"{universo.status_universo()}")
 
     elif comando == "listar pulsos":
-        respostas.append(universo.listar_pulsos())
+        respostas = ["__CLEAR__"]
+        
+        if not universo.pulsos:
+            respostas.append(f"Nenhum dado ativo no universo")
+        else:
+            for i, pulso in enumerate(universo.pulsos, 1):
+                respostas.append(f"Pulso {i} | "
+                                    f"Origem: {pulso['origem']} → "
+                                    f"Destino: {pulso['destino']} | "
+                                    f"Energia: {pulso['energia']:.2f} | "
+                                    f"Progresso: {int(pulso['progresso'] * 100)}%")
+                                      
 
 
     
@@ -157,7 +168,7 @@ def processar_comando(comando, universo, estado):
     elif len(partes) == 2 and partes[0] == "tempo":
         try:
             estado["escala_tempo"] = float(partes[1])
-            respostas.append(f"escala tempo ajustada para {estado}")
+            respostas.append(f"escala tempo ajustada para {estado["escala_tempo"]}")
         except:
             respostas.append("valor inválido")
 

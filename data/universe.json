@@ -1,82 +1,38 @@
 {
-    "ultimo_id": 195,
+    "ultimo_id": 91,
     "dados": [
         {
-            "id": 147,
+            "id": 82,
             "pos": [
-                71,
-                687
+                685,
+                55
             ],
             "tipo": "Armazenamento",
-            "energia": 2.242949612889742,
-            "tempo_proprio": 3878.5251935551432,
-            "fator_tempo": 0.8166876740192834
+            "energia": 3.7198676199015552,
+            "tempo_proprio": 3670.691302261457,
+            "fator_tempo": 0.728792580202886
         },
         {
-            "id": 164,
+            "id": 83,
             "pos": [
-                258,
-                227
+                362,
+                432
             ],
             "tipo": "Armazenamento",
-            "energia": 5.648960567030321,
-            "tempo_proprio": 2724.1193422656984,
-            "fator_tempo": 0.638967898041555
+            "energia": 2.075184932719957,
+            "tempo_proprio": 3962.4075336400338,
+            "fator_tempo": 0.8280311055016227
         },
         {
-            "id": 173,
+            "id": 90,
             "pos": [
-                327,
-                642
+                368,
+                225
             ],
             "tipo": "Armazenamento",
-            "energia": 4.4805544881745085,
-            "tempo_proprio": 2759.7227559127514,
-            "fator_tempo": 0.6905154346841215
-        },
-        {
-            "id": 191,
-            "pos": [
-                441,
-                11
-            ],
-            "tipo": "Mem\u00f3ria",
-            "energia": 1.9520488498649076,
-            "tempo_proprio": 804.7951150135102,
-            "fator_tempo": 0.8360917555884421
-        },
-        {
-            "id": 192,
-            "pos": [
-                1251,
-                437
-            ],
-            "tipo": "Rede",
-            "energia": 5.086677530140089,
-            "tempo_proprio": 705.419102881852,
-            "fator_tempo": 0.6625455017919865
-        },
-        {
-            "id": 193,
-            "pos": [
-                1249,
-                184
-            ],
-            "tipo": "Rede",
-            "energia": 1.9353094561149018,
-            "tempo_proprio": 806.4690543885108,
-            "fator_tempo": 0.8372627410933187
-        },
-        {
-            "id": 195,
-            "pos": [
-                157,
-                191
-            ],
-            "tipo": "Armazenamento",
-            "energia": 8.668727262800928,
-            "tempo_proprio": 665.6363685995545,
-            "fator_tempo": 0.5356244200367131
+            "energia": 7.914301621791753,
+            "tempo_proprio": 1042.849189104137,
+            "fator_tempo": 0.5581784366911596
         }
     ]
 }

@@ -20,7 +20,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 tela_atual = "visual"
-pygame.display.set_caption("SO Experimental - Terminal")
+pygame.display.set_caption("SO Experimental - Simulação Computacional com Terminal")
 
 clock = pygame.time.Clock()
 
@@ -50,12 +50,31 @@ current_text = ""
 # =========================================================
 # FUNÇÕES
 # =========================================================
-def desenhar_terminal(surface):
+def desenhar_terminal(surface, linhas, font, largura_max):
     y = 40
-    for linha in terminal_linhas[-15:]:
-        texto = font_terminal.render(str(linha), True, (0, 255, 0))
+    linhas_quebradas = []
+    
+    # Quebra cada linha se ultrapassar a largura máxima
+    for linha in linhas:
+        linha = str(linha)
+        palavras = linha.split(" ")
+        nova_linha = ""
+        for palavra in palavras:
+            teste = nova_linha + (" " if nova_linha else "") + palavra
+            if font.size(teste)[0] > largura_max:
+                linhas_quebradas.append(nova_linha)
+                nova_linha = palavra
+            else:
+                nova_linha = teste
+        linhas_quebradas.append(nova_linha)
+    
+    # Desenha todas as linhas quebradas
+    for l in linhas_quebradas[-15:]:  # mostra só as últimas 15 linhas
+        texto = font.render(l, True, (0, 255, 0))
         surface.blit(texto, (10, y))
-        y += 20
+        y += font.get_linesize()
+
+
 
 def desenhar_pulsos(universo, screen):
     for pulso in universo.pulsos:
@@ -191,7 +210,7 @@ def desenhar_tela_visual():
 
 def desenhar_tela_terminal():
     screen.fill((10, 10, 10))
-    desenhar_terminal(screen)
+    desenhar_terminal(screen, terminal_linhas, font_terminal, WIDTH - 20)
     
 
 
@@ -213,6 +232,10 @@ while True:
 
             elif event.key == pygame.K_RETURN and tela_atual == "terminal":
                 comando = current_text.strip().lower()
+                if comando == "":
+                    current_text = ""
+                    continue
+                
                 respostas = processar_comando(comando, universo, estado)
 
                 if comando != "":
