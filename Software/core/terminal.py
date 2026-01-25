@@ -112,6 +112,28 @@ def processar_comando(comando, universo, estado):
     elif len(partes) == 2 and partes[0] == "status" and partes[1] == "universo":
         respostas.append(f"{universo.status_universo()}")
 
+    elif partes[0] == "memoria" and partes[1] == "dado":
+        try:
+            id_dado = int(partes[2])
+        except:
+            respostas.append("id inválido")
+            return respostas
+
+        # Procura dado entre vivos e mortos
+        dado = next((d for d in universo.dados + universo.dados_mortos if d["id"] == id_dado), None)
+        if dado is None:
+            respostas.append(f"Dado {id_dado} não encontrado")
+        else:
+            memoria = dado.get("memoria", [])
+            if not memoria:
+                respostas.append(f"Dado {id_dado} tem memória vazia")
+            else:
+                respostas.append(f"Memória do dado {id_dado}:")
+                for evento in memoria:
+                    if evento.get("acao") == "enviou pulso":
+                        respostas.append(f"Pulso {evento.get('pulso_id')} | Energia: {evento.get('energia')}")
+
+
     elif comando == "listar pulsos":
         respostas = ["__CLEAR__"]
         

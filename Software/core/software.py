@@ -69,7 +69,7 @@ def desenhar_terminal(surface, linhas, font, largura_max):
         linhas_quebradas.append(nova_linha)
     
     # Desenha todas as linhas quebradas
-    for l in linhas_quebradas[-15:]:  # mostra só as últimas 15 linhas
+    for l in linhas_quebradas[-30:]:  # mostra só as últimas 15 linhas
         texto = font.render(l, True, (0, 255, 0))
         surface.blit(texto, (10, y))
         y += font.get_linesize()

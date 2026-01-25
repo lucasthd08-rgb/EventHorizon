@@ -3,6 +3,7 @@ from config import WIDTH, HEIGHT
 import json #persistência
 import os
 import random
+import uuid
 
 class Universo:
     def __init__(self, caminho="data/universe.json"):
@@ -24,7 +25,7 @@ class Universo:
             "energia": 10,
             "tempo_proprio": 0,
             "fator_tempo": 1,
-        
+            "memoria": []
         }
         self.dados.append(dado)
         self.salvar()
@@ -67,12 +68,28 @@ class Universo:
 
         if origem["energia"] < energia:
             return False
-
-        origem["energia"] -= energia
+        
 
         
 
+        if "memoria" not in origem:
+            origem["memoria"] = []
+
+        pulso_id = str(uuid.uuid4())
+
+        origem["memoria"].append({
+            "acao": "enviou pulso",
+            "destino": id_destino,
+            "energia": energia,
+            "pulso_id": pulso_id
+        })
+
+        origem["energia"] -= energia
+        
+
+                       
         pulso = {
+            "id": pulso_id,
            "origem": id_origem,
            "destino": id_destino,
            "energia": energia,
@@ -85,6 +102,8 @@ class Universo:
         }
 
         pulso["energia"] = origem["energia"] * 0.1
+
+        
 
 
         self.pulsos.append(pulso)
