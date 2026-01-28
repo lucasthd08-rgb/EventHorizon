@@ -1,19 +1,23 @@
-from terminal import processar_comando
-from config import CAMINHO_UNIVERSO, WIDTH, HEIGHT, cores_tipos
-from engine import Universo
 import pygame
 import sys
 import os
-import random
 
+from Software.core.terminal import processar_comando
+from Software.core.config import CAMINHO_UNIVERSO, WIDTH, HEIGHT, cores_tipos
+from Software.core.engine import Universo
+
+#sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from Software.apps.system_app import SystemApp
+from Software.apps.data_app import DataApp
+from Software.apps.pulse_app import PulseApp
+from Software.apps.time_app import TimeApp
 # =========================================================
 # CONFIGURAÇÃO INICIAL
 # =========================================================
 
-estado = {
-    "escala_tempo": 1.0,
-    "pausado": False
-}
+
+
+
 
 pygame.init()
 
@@ -46,6 +50,16 @@ universo = Universo(caminho=CAMINHO_UNIVERSO)
 
 contador_salvamento = 0
 current_text = ""
+
+estado = {
+    "escala_tempo": 1.0,
+    "pausado": False
+}
+
+universo.apps.append(SystemApp(universo, estado))
+universo.apps.append(DataApp(universo))
+universo.apps.append(PulseApp(universo))
+universo.apps.append(TimeApp(estado))
 
 # =========================================================
 # FUNÇÕES
@@ -149,12 +163,8 @@ def evoluir_universo(universo, dados_mortos, estado, screen):
         # -------------------------
         # Verifica se dado morreu
         # -------------------------
-        if dado["energia"] <= 0:
-            dados_mortos.append(dado)
-            universo.dados.remove(dado)
-            universo.salvar()  # salva universo sem o dado morto
-            universo.salvar_mortos()  # salva na lista de mortos
-
+        
+        
         # -------------------------
         # Desenho
         # -------------------------

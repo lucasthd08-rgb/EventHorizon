@@ -1,5 +1,6 @@
+
 # engine.py
-from config import WIDTH, HEIGHT
+#from config import WIDTH, HEIGHT
 import json #persistência
 import os
 import random
@@ -10,6 +11,7 @@ class Universo:
         self.caminho = caminho
         self.caminho_mortos = "data/dados_mortos.json"
         self.dados = []
+        self.apps = []
         self.dados_mortos = []
         self.ultimo_id = 0  # guarda o último ID usado
         self.pulsos = []
@@ -20,7 +22,7 @@ class Universo:
         self.ultimo_id += 1
         dado = {
             "id": self.ultimo_id,
-            "pos": [random.randint(10, WIDTH - 10), random.randint(10, HEIGHT - 10)],
+            "pos": [random.randint(10, 1280 - 10), random.randint(10, 720 - 10)],
             "tipo": random.choice(["Memória", "Processador", "Armazenamento", "Energia", "Rede"]),
             "energia": 10,
             "tempo_proprio": 0,

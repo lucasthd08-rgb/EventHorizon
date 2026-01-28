@@ -1,664 +1,535 @@
 {
-    "ultimo_id": 109,
+    "ultimo_id": 161,
     "dados": [
         {
-            "id": 78,
+            "id": 52,
             "pos": [
-                159,
-                629
+                76,
+                284
             ],
             "tipo": "Armazenamento",
-            "energia": 4.4224317893889875,
-            "tempo_proprio": 2788.7841053055104,
-            "fator_tempo": 0.6932976922779662,
-            "memoria": []
-        },
-        {
-            "id": 85,
-            "pos": [
-                528,
-                259
-            ],
-            "tipo": "Rede",
-            "energia": 0.7824749370770433,
-            "tempo_proprio": 921.7525062922963,
-            "fator_tempo": 0.9266345197160476,
-            "memoria": []
-        },
-        {
-            "id": 88,
-            "pos": [
-                526,
-                446
-            ],
-            "tipo": "Armazenamento",
-            "energia": 1.982555202486586,
-            "tempo_proprio": 908.722398756721,
-            "fator_tempo": 0.8344303266789836,
+            "energia": 7.174990549780126,
+            "tempo_proprio": 2390.8167358703404,
+            "fator_tempo": 0.582202479329698,
             "memoria": [
                 {
                     "acao": "enviou pulso",
-                    "destino": 90,
+                    "destino": 40,
                     "energia": 0.2,
-                    "pulso_id": "0ecbf82c-b90f-42e3-bdd4-e70088bcb331"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "32ea071e-a4c6-4233-a3fd-372b3a018c40"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "2e8d4c8a-def3-4a93-9345-fb6536f50321"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "dea934e9-2d6d-49f2-a638-a46130642fda"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "56bb0112-f700-4738-bd03-907054da86db"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "4c556ca7-9a49-49b8-9e34-4df540a19ca3"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "3f0bdfe2-edbb-49c3-8504-425bd96106ff"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "46435fae-8d91-4b09-ae61-c52d7b7c849b"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "77a92b4c-53f7-43e2-97a4-47126d939ec8"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "b803f534-fcd1-4e7b-9fec-5fd69ad26b19"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "6f3e9cae-0493-4a21-adca-f887d5226ba6"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "4c80e5c4-ef39-427f-9887-f477387b092b"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "27509d5b-d577-4c10-8b35-dac5a5f473a9"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "7b790624-32e6-4e17-9cd5-6824d953986b"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "cf26fd29-621e-429e-90ca-d71e12f51201"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "b3ade108-ef67-4bca-a3b8-17bc1c048734"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "12c36cff-e183-40ea-8ac6-ee7e5715cb0c"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "28c93a97-ca17-4d43-8bb3-be0782779f64"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "f8407aa3-45ea-45e3-8997-3ca41ba9f143"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "28da8f84-d1f3-4302-8a01-ff90bab7b27a"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "4cceec9c-a8ad-4f37-86a2-8dd4d3756218"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "d8baaf4a-54df-46cc-ba25-c1ae25341730"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "e8ca8804-3ee3-4173-ad46-85e8f1c00b68"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "c4ad967f-b710-44c0-830e-4a3a4d3838a9"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "0a17ac74-1ef2-45c1-ad83-383b55e9b383"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "1efc2aef-3029-4eb5-aedd-db29c2c0c962"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "e44d7b28-bf6a-4662-a2fa-13f992b952b4"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "c29b3b2e-8e23-4261-bb52-d5892c526971"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "69df15c6-918d-4bab-a7a7-7ea32da4af15"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "57580d8b-6db0-468e-b396-b4b690452459"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 90,
-                    "energia": 0.2,
-                    "pulso_id": "20ef6266-4ad3-4838-a6ad-cbda3e4a6fc7"
+                    "pulso_id": "c92cf632-41d0-458e-858c-98031f6292a0"
                 }
             ]
         },
         {
-            "id": 90,
+            "id": 67,
             "pos": [
-                484,
-                464
-            ],
-            "tipo": "Mem\u00f3ria",
-            "energia": 9.694329743222829,
-            "tempo_proprio": 713.3351732319285,
-            "fator_tempo": 0.5076295183978425,
-            "memoria": []
-        },
-        {
-            "id": 91,
-            "pos": [
-                771,
-                497
-            ],
-            "tipo": "Rede",
-            "energia": 4.002272718879524,
-            "tempo_proprio": 803.2243697554704,
-            "fator_tempo": 0.7138058950933718,
-            "memoria": []
-        },
-        {
-            "id": 94,
-            "pos": [
-                904,
-                125
-            ],
-            "tipo": "Energia",
-            "energia": 2.485712626288392,
-            "tempo_proprio": 854.4950309823773,
-            "fator_tempo": 0.8004023366638553,
-            "memoria": []
-        },
-        {
-            "id": 95,
-            "pos": [
-                303,
-                263
+                471,
+                498
             ],
             "tipo": "Armazenamento",
-            "energia": 3.9067184738782204,
-            "tempo_proprio": 846.6407630609053,
-            "fator_tempo": 0.7190025518559591,
-            "memoria": [
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "d7a9ce3c-3ae4-4454-8737-640b3331f99e"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "485b1bf0-23a6-4af2-a983-ba13ea346299"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "f7bd5555-7dcd-44c6-91dd-250e02dfc31e"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "24c0b752-9f11-41d6-9396-fd29fac85346"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "4d5242d2-19f1-4454-9e8b-cb6fdd0e5985"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "58cc1071-0dda-4f82-b567-f4c7c91c96b3"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "16ae1eee-3f2d-4d2c-aa0b-12edb1cf2479"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "6d7e1042-dedb-4a2c-8f34-8ec2e362ab39"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "6d59381f-6ffb-4456-bab1-8391a7e2455b"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "827cd14b-9118-4cbc-9afb-2781a3f8ba90"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "3b854735-3b1d-44da-bcc2-503903f2410c"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "659a67b4-002b-4a15-b0fd-e70e997dff37"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "f0574433-c5b0-4ed7-a7be-c2db07e7a43e"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "11922d8a-c7ff-4521-8b16-1efb587a9765"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "9a118698-127a-4aa7-ba7c-4e20e2e1e88f"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "937182bb-1a85-4b59-93d8-a39129a5df40"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "c5a1c24b-c3f8-4ab2-b8b5-2993e1bb16fb"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "649fef82-de3e-47e4-a5c4-46dd9b4a808c"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "8de69ed5-3e79-4dc2-8e35-15b5d40524e3"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "e8ebdc06-5f7e-47a2-a976-b30b7b3ae254"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "54f56545-ec45-40c1-bf5f-49451f75be3c"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 97,
-                    "energia": 0.2,
-                    "pulso_id": "3e9cbc66-e887-4896-81a4-d1af09fada23"
-                }
-            ]
-        },
-        {
-            "id": 97,
-            "pos": [
-                369,
-                240
-            ],
-            "tipo": "Rede",
-            "energia": 9.81451143590347,
-            "tempo_proprio": 715.8685925916486,
-            "fator_tempo": 0.5045521462215949,
+            "energia": 5.899471531279032,
+            "tempo_proprio": 2402.7161742091666,
+            "fator_tempo": 0.6289019697889547,
             "memoria": []
         },
         {
-            "id": 98,
+            "id": 93,
             "pos": [
-                692,
-                399
-            ],
-            "tipo": "Energia",
-            "energia": 0.7824749370770433,
-            "tempo_proprio": 921.7525062922963,
-            "fator_tempo": 0.9266345197160476,
-            "memoria": []
-        },
-        {
-            "id": 100,
-            "pos": [
-                266,
-                389
-            ],
-            "tipo": "Rede",
-            "energia": 5.284575833576721,
-            "tempo_proprio": 765.0382384185638,
-            "fator_tempo": 0.6539745219025772,
-            "memoria": [
-                {
-                    "acao": "enviou pulso",
-                    "destino": 93,
-                    "energia": 0.2,
-                    "pulso_id": "7ce7be26-169b-472c-8527-5b8310d8ed76"
-                }
-            ]
-        },
-        {
-            "id": 101,
-            "pos": [
-                1041,
-                311
-            ],
-            "tipo": "Mem\u00f3ria",
-            "energia": 5.107071227456997,
-            "tempo_proprio": 774.5985572927366,
-            "fator_tempo": 0.6616518858832212,
-            "memoria": []
-        },
-        {
-            "id": 102,
-            "pos": [
-                710,
-                671
+                891,
+                25
             ],
             "tipo": "Armazenamento",
-            "energia": 7.073529418968095,
-            "tempo_proprio": 567.9666171840385,
-            "fator_tempo": 0.5856618016775853,
+            "energia": 6.319392595804374,
+            "tempo_proprio": 2360.9728786185183,
+            "fator_tempo": 0.6127218942162987,
             "memoria": [
                 {
                     "acao": "enviou pulso",
-                    "destino": 103,
+                    "destino": 19,
                     "energia": 0.2,
-                    "pulso_id": "272f9ba4-3d86-45c6-b2ee-3af96cfad1d7"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "e22c9c19-306b-4eef-bbe9-44c3b699d004"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "dd6d0d87-9c6d-47d7-91f0-e74831d20de5"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "de067387-4322-436c-8a9e-820a38ad7a0a"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "59c8dc05-ad25-40ef-8691-6e74e9c3149f"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "2896bc99-2651-4fc7-a0a9-00f221d296c5"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "12ce4fd8-8fc3-4b91-86cc-b3f9ee561307"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "68fbf64e-cec3-4005-a8ca-0c69f6560b1b"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "29f4f438-79be-4ad2-9b77-ef36fc2b037c"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "723af0a2-99a5-4378-ac66-1b4c89bc95fc"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "c9139aeb-cf56-44f0-9a90-20e64c55e8c3"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "6068e106-965f-42b2-a28c-ba6410304d42"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "aa9c5fbd-9ad0-46ab-a29e-b8305010ce8f"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "02c0658a-142f-4c25-8e6b-75ed009b00d0"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "1b13d71f-5ff1-4d64-a8a2-a84c5ae52829"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "80c6b08e-c625-447c-8bf0-4dc5276ca0d2"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "9ff2730d-1840-4b30-842c-edeb1de4fff1"
-                },
-                {
-                    "acao": "enviou pulso",
-                    "destino": 103,
-                    "energia": 0.2,
-                    "pulso_id": "5e166fa8-ca11-441f-a3d2-e7c36082ed22"
+                    "pulso_id": "b7b95d8d-ebb4-4109-a6c9-87a6498740a3"
                 }
             ]
         },
         {
-            "id": 103,
+            "id": 112,
             "pos": [
-                754,
-                624
-            ],
-            "tipo": "Energia",
-            "energia": 9.939917272347746,
-            "tempo_proprio": 542.771291582574,
-            "fator_tempo": 0.5013805242594078,
-            "memoria": []
-        },
-        {
-            "id": 105,
-            "pos": [
-                139,
-                88
-            ],
-            "tipo": "Mem\u00f3ria",
-            "energia": 3.5808210380359835,
-            "tempo_proprio": 641.9178961964017,
-            "fator_tempo": 0.7359337103219427,
-            "memoria": []
-        },
-        {
-            "id": 106,
-            "pos": [
-                776,
-                63
+                36,
+                548
             ],
             "tipo": "Armazenamento",
-            "energia": 8.957845979374374,
-            "tempo_proprio": 552.4555390472887,
-            "fator_tempo": 0.5274567368919728,
+            "energia": 6.411934437358904,
+            "tempo_proprio": 2334.4141586730807,
+            "fator_tempo": 0.6092674586589911,
+            "memoria": []
+        },
+        {
+            "id": 123,
+            "pos": [
+                963,
+                520
+            ],
+            "tipo": "Armazenamento",
+            "energia": 0.5176047638157902,
+            "tempo_proprio": 2683.62963433251,
+            "fator_tempo": 0.9506149819120016,
             "memoria": [
                 {
                     "acao": "enviou pulso",
-                    "destino": 43,
+                    "destino": 124,
                     "energia": 0.2,
-                    "pulso_id": "07f7b1ed-47ba-4751-92e2-78eaa14dc7ac"
+                    "pulso_id": "ea18d1f0-8a86-439e-a216-d47137938edb"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "7c2a34fe-dfd8-458d-b9e4-c898acc82d4b"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "8a9ca8df-cdbf-478f-9a36-e46ada3f7238"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "af33796c-99e8-4d70-8937-cd72115b7e57"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "cf54ab13-bd43-4f9a-a26f-2681f65f6835"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 20,
+                    "energia": 0.2,
+                    "pulso_id": "c54acc6f-7085-45a4-8fd3-e4fde7f2f90d"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "a3197fae-db4a-4feb-859b-8b65221b003b"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "d4932932-7478-4901-9268-aafcd717a1c5"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "d4300bc2-bc03-47b9-92a0-9daefbdef98d"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "a8b3264d-e8b4-4ba1-adeb-c9d46e4122ab"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "184b78a0-8364-4067-be93-8fe9d5921d8f"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "e20017f1-a0e4-4278-9795-969e829789e6"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "854a6b5a-c567-44fc-b2b4-9d97872d4cd7"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "d86fa919-8e41-40e3-ab62-a2c328df98c7"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "7017c8b4-44fc-489d-831a-b352f6a6afec"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "c464b011-bdaf-4230-95d9-3bd031bf12bc"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "920f78ac-d6eb-4592-885a-2195e11e09ba"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "da7d89b4-2be3-4a09-8123-47b6243efaa5"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "ca9d67de-1e51-40e1-ae8e-814bb483e6a8"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "3bcf78a2-2f3b-4f74-aadf-a0b91113d3ff"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "481232e1-19d8-4997-8d7d-1453e05c1dac"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 84,
+                    "energia": 0.2,
+                    "pulso_id": "b232da01-d290-45ad-9011-9fd94b2e86f0"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "4c4d6d93-27f0-4893-9c12-89a10d59d61b"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "bb023ed6-cacc-4ad1-95ca-209451736ae5"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "4141c5be-3d97-4469-8d33-15d37db25db5"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 84,
+                    "energia": 0.2,
+                    "pulso_id": "d864aaa6-c9f0-4f45-baf1-a20d8b9343d8"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "f4527862-f123-4a02-ad62-23551ace2eb2"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "12b97ee3-db78-4ae5-81b9-9f125a0175aa"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "ee4129bb-a444-47bb-9616-acbdf2736cbd"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "16574730-757a-4824-9204-a807311676d9"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "1118cfae-f8a3-42a3-98fe-d52f01a7a2a0"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "1798322e-119c-4bc3-968b-2896aadcf9f5"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "259bcf62-8911-4934-bd31-860b2066988d"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "bca94696-1375-49b0-a857-229ad3447d26"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "ef15e00a-b764-4e80-8688-df581c3a5e3b"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "e7bffb89-c7f5-4436-88d7-4436b686a57d"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "700bcfae-28bc-419f-b80a-e12a39ed66ef"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "fa8bab3f-d829-4d3a-9e88-e00e92da0a92"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "6cd8a186-25dc-4a8b-a364-6e332990afaf"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "bcd8fa8b-5cb3-4783-9d8b-ce3d8922e21f"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "426476ab-e971-42d4-9f33-c98ad301f0bf"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "dd4829a0-66d4-4312-9853-877f31af2354"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "6f3d8729-e44a-4703-b8fb-c20901bd9c33"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "874ce5cd-c9aa-46f7-824d-f36c309e5692"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "0044b896-1f43-4e3a-b420-9bae0c5d46ae"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "2dee74cf-1c23-499e-9c55-e0a9eadb53ac"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "e89d1683-5281-409c-b8a5-aab4793d9dee"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 124,
+                    "energia": 0.2,
+                    "pulso_id": "040835a9-642d-4a40-9916-4d748fa8930e"
                 }
             ]
         },
         {
-            "id": 107,
+            "id": 125,
             "pos": [
-                876,
-                550
+                648,
+                292
             ],
-            "tipo": "Rede",
-            "energia": 6.776626992234721,
-            "tempo_proprio": 568.6014412743755,
-            "fator_tempo": 0.5958557440628357,
+            "tipo": "Armazenamento",
+            "energia": 7.759744453911508,
+            "tempo_proprio": 2237.1182827695325,
+            "fator_tempo": 0.563035465295072,
+            "memoria": [
+                {
+                    "acao": "enviou pulso",
+                    "destino": 72,
+                    "energia": 0.2,
+                    "pulso_id": "70d1225d-0768-48e0-90b2-45131814d1e4"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 109,
+                    "energia": 0.2,
+                    "pulso_id": "9348fd96-3c32-4071-aa69-00ecd54324e0"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 109,
+                    "energia": 0.2,
+                    "pulso_id": "4c35ef03-b326-4500-ab35-3aab67a5de73"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 111,
+                    "energia": 0.2,
+                    "pulso_id": "777f819b-cc6b-49d3-991e-4bd89a5de803"
+                }
+            ]
+        },
+        {
+            "id": 128,
+            "pos": [
+                655,
+                432
+            ],
+            "tipo": "Armazenamento",
+            "energia": 7.0537371013369645,
+            "tempo_proprio": 2282.8662149416286,
+            "fator_tempo": 0.5863414187789567,
+            "memoria": [
+                {
+                    "acao": "enviou pulso",
+                    "destino": 91,
+                    "energia": 0.2,
+                    "pulso_id": "52817748-a019-4768-ab41-ac29dea24362"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 23,
+                    "energia": 0.2,
+                    "pulso_id": "9a20fd8d-e92d-484c-8b47-06ce42a57751"
+                }
+            ]
+        },
+        {
+            "id": 142,
+            "pos": [
+                259,
+                697
+            ],
+            "tipo": "Armazenamento",
+            "energia": 5.888505360198738,
+            "tempo_proprio": 2385.9605403637015,
+            "fator_tempo": 0.6293359662093602,
             "memoria": []
         },
         {
-            "id": 108,
+            "id": 151,
             "pos": [
-                445,
-                169
+                138,
+                193
             ],
-            "tipo": "Energia",
-            "energia": 6.871014961975942,
-            "tempo_proprio": 571.6429042059965,
-            "fator_tempo": 0.5925244669683847,
+            "tipo": "Armazenamento",
+            "energia": 7.151784754318774,
+            "tempo_proprio": 2087.1866021225214,
+            "fator_tempo": 0.5829900729503896,
+            "memoria": [
+                {
+                    "acao": "enviou pulso",
+                    "destino": 40,
+                    "energia": 0.2,
+                    "pulso_id": "13113bb7-7088-463c-8d84-572848018abd"
+                }
+            ]
+        },
+        {
+            "id": 155,
+            "pos": [
+                1064,
+                589
+            ],
+            "tipo": "Armazenamento",
+            "energia": 9.689933134122414,
+            "tempo_proprio": 1989.4609184287694,
+            "fator_tempo": 0.5078475439012702,
+            "memoria": [
+                {
+                    "acao": "enviou pulso",
+                    "destino": 143,
+                    "energia": 0.2,
+                    "pulso_id": "baaaacda-426c-47d4-b83c-a69596c0e577"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 100,
+                    "energia": 0.2,
+                    "pulso_id": "ba4c69d9-606b-4471-80a5-61a50271fe9e"
+                }
+            ]
+        },
+        {
+            "id": 156,
+            "pos": [
+                217,
+                333
+            ],
+            "tipo": "Armazenamento",
+            "energia": 7.2550056952025015,
+            "tempo_proprio": 2083.20987103207,
+            "fator_tempo": 0.5795030456130429,
             "memoria": []
         },
         {
-            "id": 109,
+            "id": 159,
             "pos": [
-                1218,
-                96
+                158,
+                690
             ],
-            "tipo": "Rede",
-            "energia": 3.573457712967497,
-            "tempo_proprio": 642.6542287032503,
-            "fator_tempo": 0.7363325068486558,
+            "tipo": "Armazenamento",
+            "energia": 7.1454346106001605,
+            "tempo_proprio": 2090.1322677160406,
+            "fator_tempo": 0.5832059652440732,
             "memoria": []
+        },
+        {
+            "id": 161,
+            "pos": [
+                1011,
+                290
+            ],
+            "tipo": "Armazenamento",
+            "energia": 8.196828296324204,
+            "tempo_proprio": 2029.1077553694263,
+            "fator_tempo": 0.5495131298601152,
+            "memoria": [
+                {
+                    "acao": "enviou pulso",
+                    "destino": 81,
+                    "energia": 0.2,
+                    "pulso_id": "d3e378be-a835-443b-aba5-c7b3bcec712b"
+                },
+                {
+                    "acao": "enviou pulso",
+                    "destino": 129,
+                    "energia": 0.2,
+                    "pulso_id": "ade9cc7d-c48f-4c35-b9cc-6c69b83008df"
+                }
+            ]
         }
     ]
 }
