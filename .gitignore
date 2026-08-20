@@ -5,7 +5,7 @@ build/
 data/
 dist/
 honest_validation/
-monitor_metricas_v1/
+monitor_metricas_v1/   
 node_modules/
 scripts/
 trader-ai/
