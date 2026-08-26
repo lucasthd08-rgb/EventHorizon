@@ -60,7 +60,7 @@ This pipeline is extracted into a standalone open‑source library:
 
 # Author
 
-**Lucas** — 13 years old, Brazil.  
+**Lucas** — 14 years old, Brazil.  
 OBCIT finalist.  
 Built EventHorizon‑AI alone, from the physics engine to the audit dashboard.
 
